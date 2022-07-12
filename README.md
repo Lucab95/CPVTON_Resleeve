@@ -1,33 +1,40 @@
 CPVTON resleeve assesment
 ==============================
-Assesment for Resleeve, to inference and test new images using [CPVTON+](https://github.com/minar09/cp-vton-plus).\
-the f
+Assesment for Resleeve, to inference and test new images using [CPVTON+](https://github.com/minar09/cp-vton-plus).
 
 
-Installantion:
+Installation:
 --------------
-This projects uses git lfs.
-after cloning the repository, run `git lfs install` to install git-lfs.
-and then run `git lfs pull` to download the files.
-For any problem to dowload the checkpoints,model and the openposi api, refer to the mega link below.
+This projects uses git lfs. </br>
+After cloning the repository, run `git lfs install` to install git-lfs.
+Then run `git lfs pull` to download the files. </br>
+For any problem to dowload the checkpoints,model and the openposi api, refer to the mega link below. </br>
 https://mega.nz/folder/h49ymDTb#ydJTDXkEv7J9cyy7Ye7Oeg
 
-the packages are in the requirements.txt file. A virtual environment is available in the mega folder as well
+the packages are in the requirements.txt file. A virtual environment is also available in the mega folder.
+
 
 Data preparation
 =============================
+
 To test on new images, the images need to be added in the data/raw/image and data/raw/cloth folder. In addition the file test_wild_pairs.txt needs to be added in the data/ folder. The file contains the image names and the cloth names.
+
+
 Example:
 --------
 image_name1.jpg cloth_name1.jpg
 image_name2.jpg cloth_name1.jpg
 
+
 Testing
 =======
+
 To test the model, run the following command:
 python test_extdata.py 
 No parameters are required because they are set as default.
 Although, the parameters can be changed as per the need.
+
+
 Attributes:
 -------------------
 --gpu_ids : list of integers, which GPUs to use. default: 1
