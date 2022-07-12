@@ -17,26 +17,27 @@ the packages are in the requirements.txt file. A virtual environment is also ava
 Data preparation
 =============================
 
-To test on new images, the images need to be added in the data/raw/image and data/raw/cloth folder. In addition the file test_wild_pairs.txt needs to be added in the data/ folder. The file contains the image names and the cloth names.
+To test on new images, the images need to be added in the ```data/raw/image``` and ```data/raw/cloth``` folder. In addition the file test_wild_pairs.txt needs to be added in the ```data/folder```. The file contains the image names and the cloth names.
 
 
 Example:
 --------
-image_name1.jpg cloth_name1.jpg
-image_name2.jpg cloth_name1.jpg
+image_name1.jpg cloth_name1.jpg </br>
+image_name2.jpg cloth_name5.jpg
 
 
 Testing
 =======
 
-To test the model, run the following command:
-python test_extdata.py 
-No parameters are required because they are set as default.
+To test the model, run the following command: </br>
+python test_extdata.py </br>
+No parameters are required because they are already set as default. </br>
 Although, the parameters can be changed as per the need.
 
 
 Attributes:
 -------------------
+```
 --gpu_ids : list of integers, which GPUs to use. default: 1
 --workers : number of workers for data loading. default: 1
 --batch_size : size of batch. default: 4
@@ -52,11 +53,11 @@ Attributes:
 --checkpoint_TOM: path to the checkpoint of TOM. default: 'checkpoints/TOM/tom_final.pth'
 --display_count : number of steos to receive prints from the model. default: 5
 --shuffle : whether to shuffle the data. default: True
-
+```
 Possible issues:
 ------------------
 Openpose_api has been tested only on Windows. If you are receiving problems, be sure that the path inside openpose_api\keypoints_from_images.py
-'''
+```
         try:
             # Windows Import
             if platform == "win32":
@@ -70,12 +71,13 @@ Openpose_api has been tested only on Windows. If you are receiving problems, be 
                 # If you run `make install` (default path is `/usr/local/python` for Ubuntu), you can also access the OpenPose/python module from there. This will install OpenPose and the python library at your desired installation path. Ensure that this is in your python path in order to use it.
                 # sys.path.append('/usr/local/python')
                 from openpose import pyopenpose as op
-'''
+```
+
 Additionally, you might also check
 
-'''
+```
     params["model_folder"] = "models/"
-'''
+```
 
 
 
