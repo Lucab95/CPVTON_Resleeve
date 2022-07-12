@@ -8,16 +8,17 @@ Installation:
 This projects uses git lfs. </br>
 After cloning the repository, run `git lfs install` to install git-lfs.
 Then run `git lfs pull` to download the files. </br>
-For any problem to dowload the checkpoints,model and the openposi api, refer to the mega link below. </br>
+For any problem to dowload the checkpoints,model and the *openposi_api*, refer to the mega link below. </br>
 https://mega.nz/folder/h49ymDTb#ydJTDXkEv7J9cyy7Ye7Oeg
 
-the packages are in the requirements.txt file. A virtual environment is also available in the mega folder.
+The packages are in the requirements.txt file. A virtual environment is also available in the mega folder.
 
 
 Data preparation
 =============================
 
-To test on new images, the images need to be added in the ```data/raw/image``` and ```data/raw/cloth``` folder. In addition the file test_wild_pairs.txt needs to be added in the ```data/folder```. The file contains the image names and the cloth names.
+To test on new images, the images need to be added in the ```data/raw/image``` and ```data/raw/cloth``` folder.</br>
+In addition, the file *test_wild_pairs.txt* needs to be added in the ```data/folder```. The file contains the image names and the cloth names.
 
 
 Example:
@@ -56,7 +57,7 @@ Attributes:
 ```
 Possible issues:
 ------------------
-Openpose_api has been tested only on Windows. If you are receiving problems, be sure that the path inside openpose_api\keypoints_from_images.py
+*Openpose_api* has been tested only on Windows. If you are receiving problems, be sure that the path inside '''openpose_api\keypoints_from_images.py'''
 ```
         try:
             # Windows Import
