@@ -57,7 +57,9 @@ Attributes:
 ```
 Possible issues:
 ------------------
-*Openpose_api* has been tested only on Windows. If you are receiving problems, be sure that the path inside '''openpose_api\keypoints_from_images.py'''
+I have teste *Openpose_api* only on Windows. If you are receiving any problem, be sure that the path inside ```openpose_api\keypoints_from_images.py``` 
+are pointing accordingly to your system.
+
 ```
         try:
             # Windows Import
